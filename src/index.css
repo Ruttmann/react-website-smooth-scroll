@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-green {
+  @apply rounded-3xl bg-green-500 whitespace-nowrap py-2 px-5 text-black text-base outline-none border-none cursor-pointer transition ease-in-out duration-200 no-underline hover:bg-white hover:text-black;
+}

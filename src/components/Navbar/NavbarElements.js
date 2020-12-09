@@ -23,8 +23,11 @@ export const NavLogo = ({ children, ...rest }) => (
   </LinkRouter>
 );
 
-export const MobileIcon = ({ children }) => (
-  <div className="hidden md:block md:absolute md:top-0 md:right-0 md:transform md:-translate-x-full md:translate-y-2/3 md:text-3xl md:cursor-pointer md:text-white">
+export const MobileIcon = ({ children, ...rest }) => (
+  <div
+    {...rest}
+    className="hidden md:block md:absolute md:top-0 md:right-0 md:transform md:-translate-x-full md:translate-y-2/3 md:text-3xl md:cursor-pointer md:text-white"
+  >
     {children}
   </div>
 );
