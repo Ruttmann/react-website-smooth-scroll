@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily: { custom: ["Encode Sans Expanded", "sans-serif"] },
     },
+    screens: {
+      lg: { max: "960px" },
+    },
   },
   variants: {
     extend: {},

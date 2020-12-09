@@ -1,10 +1,15 @@
 import React from "react";
+import { Nav, NavbarContainer, NavLogo } from "./NavbarElements";
 
 function Navbar() {
   return (
-    <div>
-      <h1>Nav</h1>
-    </div>
+    <>
+      <Nav>
+        <NavbarContainer>
+          <NavLogo to="/">dolla</NavLogo>
+        </NavbarContainer>
+      </Nav>
+    </>
   );
 }
 
