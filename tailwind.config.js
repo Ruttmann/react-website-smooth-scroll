@@ -7,10 +7,13 @@ module.exports = {
     },
     screens: {
       lg: { max: "960px" },
+      md: { max: "768px" },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ["active"],
+    },
   },
   plugins: [],
 };
