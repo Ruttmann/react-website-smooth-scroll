@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.0.0",
+    "@savvywombat/tailwindcss-grid-areas": "^1.1.0",
     "autoprefixer": "^9.8.6",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"

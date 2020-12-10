@@ -3,13 +3,13 @@ import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = ({ children }) => (
-  <nav className="bg-black h-20 flex justify-center items-center text-base sticky top-0 z-10 lg:transition-all lg:duration-800">
+  <nav className="bg-black h-20 -mt-20 flex justify-center items-center text-base sticky top-0 z-10 transition-all ease-out duration-800">
     {children}
   </nav>
 );
 
 export const NavbarContainer = ({ children }) => (
-  <div className="flex justify-between h-20 z-1 w-full px-32 max-w-screen-lg">
+  <div className="flex justify-between h-20 z-10 w-full px-32 max-w-screen-lg">
     {children}
   </div>
 );
@@ -40,10 +40,10 @@ export const NavMenu = ({ children }) => (
 
 export const NavItem = ({ children }) => <li className="h-20">{children}</li>;
 
-export const NavLinks = ({ children, ...rest }) => (
+export const NavLinks = ({ children, to }) => (
   <LinkScroll
-    {...rest}
-    className="text-white flex items-center no-underline py-0 px-4 h-full pointer active:border-solid active:border-3 active:border-green-500"
+    className="text-white flex items-center py-0 px-4 h-full cursor-pointer active:border-solid active:border-3 active:border-green-500"
+    to={to}
   >
     {children}
   </LinkScroll>
