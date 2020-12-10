@@ -8,6 +8,7 @@ module.exports = {
         800: "50rem",
         860: "54rem",
         1100: "69rem",
+        1300: "81rem",
       },
       gridAutoColumns: {
         "1fr": "minmax(auto, 1fr)",
@@ -28,6 +29,10 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ["active"],
+      transform: ["hover"],
+      transitionProperty: ["hover"],
+      transitionDuration: ["hover"],
+      transitionTimingFunction: ["hover"],
     },
   },
   plugins: [require("@savvywombat/tailwindcss-grid-areas")],

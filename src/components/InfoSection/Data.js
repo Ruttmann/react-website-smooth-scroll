@@ -41,9 +41,9 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   id: "signup",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "Join our Team",
   headline: "Creating an account is extremely easy",
   description:
@@ -52,7 +52,7 @@ export const homeObjThree = {
   imgStart: false,
   img: signup,
   alt: "Papers",
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
 };
