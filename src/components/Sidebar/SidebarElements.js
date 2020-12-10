@@ -5,13 +5,13 @@ import { Link as LinkRouter } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 
 export const SidebarContainer = ({ children, isOpen }) => {
-  const opacity = isOpen ? "opacity-100" : "opacity-0";
+  const opacity = isOpen ? "opacity-100" : "opacity-0 hidden";
   const top = isOpen ? "top-0" : "-top-50";
   const zIndex = isOpen ? "z-50" : "z-0";
 
   return (
     <aside
-      className={`fixed ${zIndex} w-full h-full bg-black grid items-center top-0 left-0 transition-all ease-in-out duration-500 ${opacity} ${top}`}
+      className={`fixed ${zIndex} w-full h-full bg-black grid items-center top-0 left-0 ${opacity} ${top}`}
     >
       {children}
     </aside>
