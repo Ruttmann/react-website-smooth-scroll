@@ -4,10 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: { custom: ["Encode Sans Expanded", "sans-serif"] },
+      spacing: {
+        800: "50rem",
+      },
     },
     screens: {
       lg: { max: "960px" },
       md: { max: "768px" },
+      sm: { max: "480px" },
     },
   },
   variants: {
