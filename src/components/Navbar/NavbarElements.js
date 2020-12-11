@@ -14,7 +14,7 @@ export const Nav = ({ children, scrollNav }) => {
 };
 
 export const NavbarContainer = ({ children }) => (
-  <div className="flex justify-between h-20 z-10 w-full px-32 max-w-screen-lg">
+  <div className="flex justify-between h-20 z-10 w-full py-0 px-24 max-w-screen-lg">
     {children}
   </div>
 );
@@ -48,7 +48,7 @@ export const NavItem = ({ children }) => <li className="h-20">{children}</li>;
 export const NavLinks = ({ children, ...rest }) => (
   <LinkScroll
     {...rest}
-    className="text-white flex items-center py-0 px-4 h-full cursor-pointer active:border-solid active:border-b-4 active:border-green-500"
+    className="text-white flex items-center py-0 px-4 h-full cursor-pointer"
   >
     {children}
   </LinkScroll>

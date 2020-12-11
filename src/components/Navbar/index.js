@@ -33,6 +33,7 @@ function Navbar({ toggle }) {
   }, []);
 
   const scrollProps = {
+    activeClass: "border-solid border-b-4 border-green-500",
     smooth: true,
     duration: 500,
     spy: true,
