@@ -29,8 +29,11 @@ export const FooterLinkTitle = ({ children }) => (
   <h1 className="text-base font-black mb-4">{children}</h1>
 );
 
-export const FooterLink = ({ children }) => (
-  <Link className="text-white no-underline mb-2 text-sm hover:text-green-500 hover:transition hover:duration-300 hover:ease-out">
+export const FooterLink = ({ children, ...rest }) => (
+  <Link
+    {...rest}
+    className="text-white no-underline mb-2 text-sm hover:text-green-500 hover:transition hover:duration-300 hover:ease-out"
+  >
     {children}
   </Link>
 );
@@ -45,8 +48,11 @@ export const SocialMediaWrap = ({ children }) => (
   </div>
 );
 
-export const SocialLogo = ({ children }) => (
-  <Link className="text-white justify-self-start cursor-pointer no-underline text-2xl flex items-center mb-4 font-bold">
+export const SocialLogo = ({ children, ...rest }) => (
+  <Link
+    {...rest}
+    className="text-white justify-self-start cursor-pointer no-underline text-2xl flex items-center mb-4 font-bold"
+  >
     {children}
   </Link>
 );
