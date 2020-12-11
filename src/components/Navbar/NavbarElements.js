@@ -2,11 +2,16 @@ import React from "react";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
-export const Nav = ({ children }) => (
-  <nav className="bg-black h-20 -mt-20 flex justify-center items-center text-base sticky top-0 z-10 transition-all ease-out duration-800">
-    {children}
-  </nav>
-);
+export const Nav = ({ children, scrollNav }) => {
+  const background = scrollNav ? "bg-black" : "bg-transparent";
+  return (
+    <nav
+      className={`${background} h-20 -mt-20 flex justify-center items-center text-base sticky top-0 z-10 lg:transition-all lg:duration-500 lg:ease-linear`}
+    >
+      {children}
+    </nav>
+  );
+};
 
 export const NavbarContainer = ({ children }) => (
   <div className="flex justify-between h-20 z-10 w-full px-32 max-w-screen-lg">
