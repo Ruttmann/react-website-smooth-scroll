@@ -45,10 +45,10 @@ export const NavMenu = ({ children }) => (
 
 export const NavItem = ({ children }) => <li className="h-20">{children}</li>;
 
-export const NavLinks = ({ children, to }) => (
+export const NavLinks = ({ children, ...rest }) => (
   <LinkScroll
-    className="text-white flex items-center py-0 px-4 h-full cursor-pointer active:border-solid active:border-3 active:border-green-500"
-    to={to}
+    {...rest}
+    className="text-white flex items-center py-0 px-4 h-full cursor-pointer active:border-solid active:border-b-4 active:border-green-500"
   >
     {children}
   </LinkScroll>

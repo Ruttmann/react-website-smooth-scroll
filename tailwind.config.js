@@ -28,6 +28,9 @@ module.exports = {
   },
   variants: {
     extend: {
+      borderStyle: ["active"],
+      borderColor: ["active"],
+      borderWidth: ["active"],
       backgroundColor: ["active"],
       transform: ["hover"],
       transitionProperty: ["hover"],
