@@ -13,6 +13,9 @@ module.exports = {
       gridAutoColumns: {
         "1fr": "minmax(auto, 1fr)",
       },
+      minHeight: {
+        692: "43rem",
+      },
     },
     screens: {
       lg: { max: "960px" },
@@ -28,9 +31,6 @@ module.exports = {
   },
   variants: {
     extend: {
-      borderStyle: ["active"],
-      borderColor: ["active"],
-      borderWidth: ["active"],
       backgroundColor: ["active"],
       transform: ["hover"],
       transitionProperty: ["hover"],
