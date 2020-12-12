@@ -28,7 +28,7 @@ export const FormContent = ({ children }) => (
 export const Form = ({ children, ...rest }) => (
   <form
     {...rest}
-    className="bg-black  max-w-sm h-auto w-full z-10 grid my-0 mx-auto py-20 px-8 rounded-2xl shadow-lg sm:p-8"
+    className="bg-black max-w-sm h-auto w-full z-10 grid my-0 mx-auto py-20 px-8 rounded-2xl shadow-lg sm:p-8"
   >
     {children}
   </form>
@@ -47,7 +47,7 @@ export const FormLabel = ({ children, htmlFor }) => (
 );
 
 export const FormInput = ({ type }) => (
-  <input type={type} className="p-4 mb-8 border-none rounded-md" />
+  <input type={type} className="p-4 mb-8 border-none rounded-md xsm:w-60" />
 );
 
 export const FormButton = ({ children }) => (

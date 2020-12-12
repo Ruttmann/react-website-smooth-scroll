@@ -36,6 +36,11 @@ function HeroSection() {
           <HeroBtnWrapper>
             <Button
               to="signup"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
               primary
               dark
               onMouseEnter={onHover}

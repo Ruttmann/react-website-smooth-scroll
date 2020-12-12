@@ -21,6 +21,7 @@ module.exports = {
       lg: { max: "960px" },
       md: { max: "768px" },
       sm: { max: "480px" },
+      xsm: { max: "320px" },
     },
     gridTemplateAreas: {
       xlimgstart: ["col2 col1"],

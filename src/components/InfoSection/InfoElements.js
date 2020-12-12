@@ -24,7 +24,7 @@ export const InfoRow = ({ children, imgStart }) => {
     : "grid-areas-mdimgend";
   return (
     <div
-      className={`grid auto-cols-1fr ${gridAreasXL} md:${gridAreasMD} items-center`}
+      className={`grid auto-cols-1fr ${gridAreasXL} md:${gridAreasMD} xsm:flex items-center`}
     >
       {children}
     </div>
@@ -32,11 +32,13 @@ export const InfoRow = ({ children, imgStart }) => {
 };
 
 export const Column1 = ({ children }) => (
-  <div className="mb-4 py-0 px-4 grid-in-col1">{children}</div>
+  <div className="mb-4 py-0 px-4 grid-in-col1 xsm:justify-center xsm:items-center">
+    {children}
+  </div>
 );
 
 export const Column2 = ({ children }) => (
-  <div className="mb-4 py-0 px-4 grid-in-col2">{children}</div>
+  <div className="mb-4 py-0 px-4 grid-in-col2 xsm:hidden">{children}</div>
 );
 
 export const TextWrapper = ({ children }) => (

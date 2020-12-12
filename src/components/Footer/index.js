@@ -74,8 +74,7 @@ function Footer() {
               dolla
             </SocialLogo>
             <WebsiteRights>
-              dolla &copy; {new Date().getFullYear()}
-              All Rights Reserved.
+              dolla &copy; {new Date().getFullYear()} All Rights Reserved.
             </WebsiteRights>
 
             <SocialIcons>
